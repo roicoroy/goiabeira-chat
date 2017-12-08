@@ -1,0 +1,13 @@
+
+    ion-card ion-row {
+        padding:10px;
+        float: right;
+        ion-card ion-row {
+            padding:10px;
+            float: right;
+    
+            div button:nth-of-tyoe(1) {
+                margin-right: 10px;
+            }
+        }
+    }
