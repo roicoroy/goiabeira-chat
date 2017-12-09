@@ -1,4 +1,3 @@
-// import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth'
 import { Account } from '../models/account/account.interface';
@@ -9,6 +8,10 @@ export class AuthService {
 
   constructor(public auth: AngularFireAuth) {
     console.log('Hello AuthProvider Provider');
+  }
+
+  getAuthenticatedUser(){
+    return this.auth.authState;
   }
 
   async createUserWithEmailAndPassword(account){
