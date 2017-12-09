@@ -19,7 +19,7 @@ export class RegisterPage {
   register (event: LoginResponse ) {
     if(event.error){
       this.toast.create ({
-        message: '${event.result.email}',
+        message: 'Accunt created ${event.result.email}',
         duration: 3000
       }).present();
     }
