@@ -6,7 +6,7 @@ import { LoginResponse } from '../../models/login/login-response.interface'
 
 @Component({
   selector: 'app-register-form',
-  templateUrl: 'register-form.component.html'
+  templateUrl: './register-form.component.html'
 })
 export class RegisterFormComponent {
 

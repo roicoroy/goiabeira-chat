@@ -20,6 +20,8 @@ import { AuthService } from '../providers/auth.service';
 import { DataService } from '../providers/data.service';
 import { FormsModule } from '@angular/forms';
 
+// import { InboxPageModule } from '../pages/inbox/inbox.module';
+
 @NgModule({
   declarations: [
     MyApp
@@ -30,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     // HttpModule,
     // HttpClientModule,
     // HttpClient,
+    // InboxPageModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,

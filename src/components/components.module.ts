@@ -1,28 +1,33 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
-import { LoginFormComponent } from './login-form/login-form.component';
-import { RegisterFormComponent } from './register-form/register-form.component';
 import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { ProfileSearchComponent } from './profile-search.component/profile-search.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+
+
+
 
 
 
 @NgModule({
 	declarations: [
+	EditProfileFormComponent,
 	LoginFormComponent,
-    RegisterFormComponent,
-    EditProfileFormComponent,
-    ProfileViewComponent,
-    ProfileViewComponent
+	ProfileSearchComponent,
+	ProfileViewComponent,
+	RegisterFormComponent
 	],
 	imports: [
 		IonicModule
 	],
 	exports: [
+	EditProfileFormComponent,
 	LoginFormComponent,
-    RegisterFormComponent,
-    EditProfileFormComponent,
-    ProfileViewComponent
+	ProfileSearchComponent,
+	ProfileViewComponent,
+	RegisterFormComponent
 	]
 })
 export class ComponentsModule {}

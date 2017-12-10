@@ -11,9 +11,15 @@ import { Message } from '../../models/messages/message.interface';
 export class InboxPage {
   messageList: Message[] = MESSAGE_LIST;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams
+  ) {
   }
-
+  navigateToSearchUserPage(){
+    this.navCtrl.push('SearchUserPage');
+  }
+  
   ionViewDidLoad() {
     console.log(this.messageList);
   }
