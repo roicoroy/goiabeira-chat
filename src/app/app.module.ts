@@ -18,6 +18,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthService } from '../providers/auth.service';
 import { DataService } from '../providers/data.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DataService } from '../providers/data.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     // HttpModule,
     // HttpClientModule,
     // HttpClient,

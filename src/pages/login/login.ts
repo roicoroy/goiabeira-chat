@@ -21,7 +21,7 @@ constructor(
     console.log(event);
     if (!event.error) {
       this.toast.create({
-        message: 'Welcome to ... ${event.result.email}' ,
+        message: `Welcome to ... ${event.result.email}` ,
         duration: 3000
       }).present();
       this.data.getProfile(<User>event.result).subscribe(profile => {
