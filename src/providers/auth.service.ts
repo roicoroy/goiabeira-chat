@@ -39,6 +39,9 @@ export class AuthService {
         error: e
       };
     }
-  }   
+  } 
+  signOut(){
+    this.auth.auth.signOut
+  }  
 
 }

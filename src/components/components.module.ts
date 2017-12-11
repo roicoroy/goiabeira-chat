@@ -5,9 +5,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { ProfileSearchComponent } from './profile-search.component/profile-search.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
-
-
-
+import { SendMessageBoxComponent } from './send-message-box/send-message-box.component';
+import { ChatMessageComponent } from './chat-message/chat-message.component';
 
 
 
@@ -17,7 +16,10 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 	LoginFormComponent,
 	ProfileSearchComponent,
 	ProfileViewComponent,
-	RegisterFormComponent
+	RegisterFormComponent,
+    SendMessageBoxComponent,
+    ChatMessageComponent,
+	
 	],
 	imports: [
 		IonicModule
@@ -27,7 +29,9 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 	LoginFormComponent,
 	ProfileSearchComponent,
 	ProfileViewComponent,
-	RegisterFormComponent
+	RegisterFormComponent,
+    SendMessageBoxComponent,
+    ChatMessageComponent
 	]
 })
 export class ComponentsModule {}

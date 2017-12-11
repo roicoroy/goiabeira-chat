@@ -11,7 +11,7 @@ import { LoadingController, Loading } from 'ionic-angular';
   templateUrl: 'profile-view.component.html'
 })
 export class ProfileViewComponent implements OnInit  {
-  private authUser: User;
+  // private authUser: User;
   public userProfile: Profile;
   private loader: Loading;
 

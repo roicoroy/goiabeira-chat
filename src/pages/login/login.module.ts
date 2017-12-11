@@ -5,7 +5,7 @@ import { ComponentsModule } from '../../components/components.module'
 
 @NgModule({
   declarations: [
-    LoginPage,
+    LoginPage
   ],
   imports: [
     IonicPageModule.forChild(LoginPage),

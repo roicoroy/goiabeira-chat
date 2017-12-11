@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Profile } from '../../models/profile/profile.interface';
+import { Message } from '../../models/messages/message.interface';
+import { MESSAGE_LIST } from '../../mocks/messages/message';
 
 @IonicPage()
 @Component({
@@ -8,11 +11,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MessagePage {
 
+  selectedProfile: Profile;
+
+  messageList: Message[];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.messageList = MESSAGE_LIST
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MessagePage');
+    this.selectedProfile = this.navParams.get('profile');
   }
 
 }
