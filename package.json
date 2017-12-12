@@ -1,8 +1,8 @@
 {
-  "name": "beep",
+  "name": "goiabeira-chat",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "goiabeira-chat",
+  "homepage": "http://goiabeira-chat.firebaseapp.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -26,7 +26,7 @@
     "@ionic/storage": "2.1.3",
     "add": "2.0.6",
     "angularfire2": "^5.0.0-rc.4",
-    "cordova-android": "^6.3.0",
+    "cordova-android": "6.4.0",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-splashscreen": "^4.0.3",
@@ -43,7 +43,7 @@
     "@ionic/app-scripts": "3.1.5",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project",
+  "description": "goiabeira-chat",
   "cordova": {
     "plugins": {
       "ionic-plugin-keyboard": {},

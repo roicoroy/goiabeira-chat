@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Channel } from '../../models/channel/channel.interface';
 import { ChannelMessage } from '../../models/channel/channel-message.interface';
 import { ChatService } from '../../providers/chat.service';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 
 
 @IonicPage()

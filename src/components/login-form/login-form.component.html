@@ -12,8 +12,9 @@
 
       <ion-item>
         <ion-label floating>Password</ion-label>
+        <!-- Password must have at least 6 characters and 1 uppercase letter: -->
         <ion-input [(ngModel)]="account.password" name="password" type="password" #password="ngModel"
-        required pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,50})$"
+        required pattern="(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{6,}$"
         ></ion-input>
       </ion-item>
 

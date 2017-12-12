@@ -1,8 +1,8 @@
 
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database-deprecated";
 import { Injectable } from '@angular/core';
 import { Observable } from "rxjs/Observable";
- import "rxjs/add/operator/mergeMap";
+import "rxjs/add/operator/mergeMap";
 import 'rxjs/add/observable/forkJoin';
 import 'rxjs/add/operator/first';
 
@@ -21,9 +21,9 @@ export class ChatService {
     this.database.list(`channel-names`).push({ name: channelName });
   }
 
-  getChannelListRef(): FirebaseListObservable<Channel> {
-    return this.database.list(`channel-names`);
-  }
+  getChannelListRef(): FirebaseListObservable<Channel[]> { 
+    return this.database.list(`channel-names`)
+}
 
   getChannelChatRef(channelKey: string) {
     return this.database.list(`channels/${channelKey}`);
