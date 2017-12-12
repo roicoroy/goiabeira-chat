@@ -5,12 +5,14 @@ import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   declarations: [
-    MessagePage
+    MessagePage,
   ],
   imports: [
     IonicPageModule.forChild(MessagePage),
     ComponentsModule
-    
   ],
+  exports: [
+    MessagePage
+  ]
 })
-export class MessagePageModule {}
+export class MessageModule {}

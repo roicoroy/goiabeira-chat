@@ -5,13 +5,14 @@ import { Message } from '../../models/messages/message.interface';
   selector: 'app-chat-message',
   templateUrl: 'chat-message.component.html'
 })
-export class ChatMessageComponent {
+export class ChatMessage {
 
+  @Input() chatMessage: Message
 
-  @Input() chatMessage : Message;
-  @Input() chatIndex : number;
-  constructor() {
-    console.log('Hello ChatMessageComponent Component');
+  @Input() userId: string;
+  
+  constructor(){
+
   }
 
 }

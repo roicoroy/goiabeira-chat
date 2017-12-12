@@ -11,10 +11,9 @@ export class SearchUserPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  openChat(profile:Profile){
-    this.navCtrl.push('MessagePage', {profile})
-    
+
+
+  openChat(profile: Profile) {
+    this.navCtrl.push('MessagePage', { profile })
   }
-
-
 }

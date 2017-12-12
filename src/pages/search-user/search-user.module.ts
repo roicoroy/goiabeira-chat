@@ -11,5 +11,8 @@ import { ComponentsModule } from '../../components/components.module';
     IonicPageModule.forChild(SearchUserPage),
     ComponentsModule
   ],
+  exports: [
+    SearchUserPage
+  ]
 })
 export class SearchUserPageModule {}

@@ -1,29 +1,28 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from 'angularfire2/auth'
+import { AngularFireAuth } from 'angularfire2/auth';
 import { Account } from '../models/account/account.interface';
 import { LoginResponse } from '../models/login/login-response.interface';
 
 @Injectable()
 export class AuthService {
 
-  constructor(public auth: AngularFireAuth) {
-    console.log('Hello AuthProvider Provider');
+  constructor(private auth: AngularFireAuth) {
+    console.log('Hello Auth Provider');
   }
 
   getAuthenticatedUser(){
     return this.auth.authState;
   }
 
-  async createUserWithEmailAndPassword(account){
+  async createUserWithEmailAndPassword(account: Account) {
     try {
-      return <LoginResponse> { 
-        result: await 
-        this.auth.auth.createUserWithEmailAndPassword(account.email, account.password),
-    }
-  }
-    catch(e){
       return <LoginResponse> {
-        error:e,
+        result: await this.auth.auth.createUserWithEmailAndPassword(account.email, account.password)
+      }
+
+    } catch(e) {
+      return <LoginResponse> {
+        error: e
       }
     }
   }
@@ -32,16 +31,14 @@ export class AuthService {
     try {
       return <LoginResponse> {
         result: await this.auth.auth.signInWithEmailAndPassword(account.email, account.password)
-      } 
-    }
-    catch(e) {
+      };
+    } catch(e) {
       return <LoginResponse> {
         error: e
       };
     }
-  } 
-  signOut(){
-    this.auth.auth.signOut
-  }  
-
+  }
+  signOut() {
+    this.auth.auth.signOut();
+  }
 }
